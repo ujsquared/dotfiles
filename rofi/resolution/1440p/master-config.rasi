@@ -1,0 +1,207 @@
+/* ---- macOS Spotlight Theme ---- */
+/* Master Config 1440p with Spotlight styling */
+
+/* ---- Configuration ---- */
+
+configuration {
+	font:						"Montserrat 13";
+	modi:                       "drun,run,filebrowser";
+    show-icons:                 true;
+    display-drun:               "Apps";
+    display-run:                "Run";
+    display-filebrowser:        "Files";
+    display-window:             "Windows";
+	drun-display-format:        "{name}";
+	hover-select:               true;
+	me-select-entry:            "MouseSecondary";
+    me-accept-entry:            "MousePrimary";
+	window-format:              "{w} · {c} · {t}";
+	dpi:						1;
+}
+
+/* ---- Load Spotlight colors ---- */
+@theme "~/.config/rofi/wallust/colors-rofi.rasi"
+
+/* ---- Global Properties ---- */
+* {
+    background-color:   transparent;
+    text-color:         @fg0;
+
+    margin:     0;
+    padding:    0;
+    spacing:    0;
+}
+
+/* ---- Window ---- */
+window {
+    background-color:   @bg0;
+    location:           center;
+    width:              640;
+    border-radius:      8;
+}
+
+/* ----- Main Box ----- */
+mainbox {
+    enabled:                     true;
+    orientation:                 vertical;
+    children:                    [ "inputbar", "listbox" ];
+    background-color:            transparent;
+}
+
+/* ---- Inputbar ---- */
+inputbar {
+    font:       "Montserrat 20";
+    padding:    12px;
+    spacing:    12px;
+    children:   [ icon-search, entry, dummy, mode-switcher ];
+}
+
+icon-search {
+    expand:     false;
+    filename:   "search";
+    size:       28px;
+}
+
+icon-search, entry, element-icon, element-text {
+    vertical-align: 0.5;
+}
+
+/* ---- Entry input ---- */
+entry {
+    font:   inherit;
+    placeholder         : "Search";
+    placeholder-color   : @fg2;
+}
+
+/* ---- Listbox ---- */
+listbox {
+    spacing:                     0px;
+    padding:                     0px;
+    background-color:            transparent;
+    orientation:                 vertical;
+    children:                    [ "message", "listview" ];
+}
+
+/* ---- Listview ---- */
+listview {
+    enabled:                     true;
+    columns:                     1;
+    lines:                       10;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   true;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                false;
+    fixed-columns:               true;
+    spacing:                     0px;
+    background-color:            transparent;
+    border:                      1px 0 0;
+    border-color:                @bg1;
+}
+
+/* ---- Dummy ---- */
+dummy {
+    expand:                      true;
+    background-color:            transparent;
+}
+
+/* ---- Mode Switcher ---- */
+mode-switcher{
+    enabled:                     true;
+    spacing:                     8px;
+    background-color:            transparent;
+}
+button {
+    padding:                     8px 12px;
+    border-radius:               8;
+    background-color:            @bg1;
+    text-color:                  @fg0;
+    cursor:                      pointer;
+}
+button selected {
+    background-color:            @bg2;
+    text-color:                  @fg1;
+}
+
+/* ---- Scrollbar ---- */
+scrollbar {
+    width:        4px;
+    border:       0;
+    handle-color: @bg1;
+    handle-width: 8px;
+    padding:      0;
+}
+
+/* ---- Elements ---- */
+element {
+    enabled:                     true;
+    spacing:                     16px;
+    padding:                     8px 16px;
+    background-color:            transparent;
+    cursor:                      pointer;
+}
+
+element normal.normal {
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+element normal.urgent {
+    background-color:            @bg2;
+    text-color:                  @fg1;
+}
+element normal.active {
+    text-color:                  @bg2;
+}
+
+element selected.normal, element selected.active {
+    background-color:            @bg2;
+    text-color:                  @fg1;
+}
+element selected.urgent {
+    background-color:            @bg2;
+    text-color:                  @fg1;
+}
+
+element alternate.normal {
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+element alternate.urgent {
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+element alternate.active {
+    text-color:                  @bg2;
+}
+
+element-icon {
+    background-color:            transparent;
+    text-color:                  inherit;
+    size:                        1em;
+    cursor:                      inherit;
+}
+element-text {
+    font:						"Montserrat 13";
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+
+/* ---- Message ---- */
+message {
+    border:             2px 0 0;
+    border-color:       @bg1;
+    background-color:   @bg1;
+}
+textbox {
+    padding:    8px 24px;
+}
+error-message {
+    padding:                     12px;
+    border-radius:               8;
+    background-color:            @bg1;
+    text-color:                  @fg0;
+}

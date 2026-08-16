@@ -1,0 +1,22 @@
+/* ---- macOS Spotlight Theme ---- */
+/* Wallpaper Effects */
+
+@import "~/.config/rofi/master-config.rasi" 
+
+/* ---- Entry ---- */ 
+entry {
+  width: 20%;
+  placeholder: "🏙️ Choose desired wallpaper effect";
+}
+
+/* ---- Window ---- */
+window {
+  width: 24%;
+}
+
+/* ---- Listview ---- */
+listview {
+  fixed-columns: false;
+  columns: 2;
+  lines: 8;
+}

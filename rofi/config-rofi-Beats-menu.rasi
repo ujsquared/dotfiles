@@ -1,0 +1,22 @@
+/* ---- macOS Spotlight Theme ---- */
+/* Rofi Beats Config (menu) */
+
+@import "~/.config/rofi/master-config.rasi"  
+
+/* ---- Entry ---- */ 
+entry {
+  width: 20%;
+  placeholder: "📻 Choose Music Source";
+}
+
+/* ---- Window ---- */
+window {
+  width: 24%;
+}
+
+/* ---- Listview ---- */
+listview {
+  fixed-columns: false;
+  columns: 1;
+  lines: 3;
+}

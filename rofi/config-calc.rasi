@@ -1,0 +1,21 @@
+/* ---- macOS Spotlight Theme ---- */
+/* Main Config Calculator */
+
+@import "~/.config/rofi/master-config.rasi" 
+
+/* ---- Entry ---- */
+entry {
+  width: 27%;
+  placeholder: "🧮 Calculate";
+}
+
+/* ---- Window ---- */
+window {
+    width:	30%;
+}
+
+/* ---- Message ---- */
+textbox {
+    background-color:            @bg2;
+    text-color:                  @fg1;
+}

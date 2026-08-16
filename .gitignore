@@ -3,11 +3,16 @@
 !/hypr/
 !/alacritty/
 !/nvim/
+!/waybar/
+!/rofi/
 
 # alacritty: skip vendored theme repo (has its own .git) + stale backups
 /alacritty/themes/
 /alacritty/*.bak
 /alacritty/*.yml.*
+
+# rofi: runtime symlink to current wallpaper (machine state)
+/rofi/.current_wallpaper
 
 # don't ignore this file itself (it matches /*)
 !.gitignore

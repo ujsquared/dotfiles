@@ -1,0 +1,39 @@
+/* ---- macOS Spotlight Theme Colors ---- */
+/* Applied from spotlight.rasi */
+
+* {
+    /* Spotlight color scheme */
+    bg0:     #F5F5F5BF;
+    bg1:     #7E7E7E80;
+    bg2:     #0860F2E6;
+
+    fg0:     #242424;
+    fg1:     #FFFFFF;
+    fg2:     #24242480;
+
+    /* Map to existing variable names for compatibility */
+    active-background: @bg2;
+    active-foreground: @fg1;
+    normal-background: @bg0;
+    normal-foreground: @fg0;
+    urgent-background: @bg2;
+    urgent-foreground: @fg1;
+
+    alternate-active-background: @bg2;
+    alternate-active-foreground: @fg1;
+    alternate-normal-background: @bg0;
+    alternate-normal-foreground: @fg0;
+    alternate-urgent-background: @bg0;
+    alternate-urgent-foreground: @fg0;
+
+    selected-active-background: @bg1;
+    selected-active-foreground: @fg1;
+    selected-normal-background: @bg1;
+    selected-normal-foreground: @fg1;
+    selected-urgent-background: @bg2;
+
+    background: @bg0;
+    background-color: @bg0;
+    foreground: @fg0;
+    border-color: @bg1;
+}
