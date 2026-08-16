@@ -6,6 +6,7 @@
 !/waybar/
 !/rofi/
 !/tmux/
+!/zsh/
 
 # alacritty: skip vendored theme repo (has its own .git) + stale backups
 /alacritty/themes/
