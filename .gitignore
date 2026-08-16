@@ -1,10 +1,11 @@
-# Whitelist: only hypr, alacritty, nvim are tracked. Everything else in ~/.config is ignored.
+# Whitelist: only the dirs below are tracked. Everything else in ~/.config is ignored.
 /*
 !/hypr/
 !/alacritty/
 !/nvim/
 !/waybar/
 !/rofi/
+!/tmux/
 
 # alacritty: skip vendored theme repo (has its own .git) + stale backups
 /alacritty/themes/
