@@ -1,0 +1,19 @@
+# Logs
+hypr_errors.txt
+nohup.out
+*.log
+
+# Runtime / state markers (regenerated each boot)
+.initial_startup_done
+monitors.conf
+workspaces.conf
+
+# Generated wallpaper cache (large binary images)
+wallpaper_effects/.wallpaper_current
+wallpaper_effects/.wallpaper_modified
+
+# Backups / editor artifacts
+*.bak
+*.save
+*~
+*.swp

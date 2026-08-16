@@ -1,0 +1,13 @@
+# Whitelist: only hypr, alacritty, nvim are tracked. Everything else in ~/.config is ignored.
+/*
+!/hypr/
+!/alacritty/
+!/nvim/
+
+# alacritty: skip vendored theme repo (has its own .git) + stale backups
+/alacritty/themes/
+/alacritty/*.bak
+/alacritty/*.yml.*
+
+# don't ignore this file itself (it matches /*)
+!.gitignore
