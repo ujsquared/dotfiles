@@ -8,6 +8,8 @@
 !/tmux/
 !/zsh/
 !/ghostty/
+!/swappy/
+!/normcap/
 
 # alacritty: skip vendored theme repo (has its own .git) + stale backups
 /alacritty/themes/
@@ -16,6 +18,9 @@
 
 # rofi: runtime symlink to current wallpaper (machine state)
 /rofi/.current_wallpaper
+
+# normcap: OCR language data (4MB binary, redownloaded by normcap)
+/normcap/tessdata/
 
 # don't ignore these themselves (they match /*)
 !.gitignore
