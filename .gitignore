@@ -14,5 +14,6 @@
 # rofi: runtime symlink to current wallpaper (machine state)
 /rofi/.current_wallpaper
 
-# don't ignore this file itself (it matches /*)
+# don't ignore these themselves (they match /*)
 !.gitignore
+!README.md
